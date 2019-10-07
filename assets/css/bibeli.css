@@ -1,0 +1,72 @@
+.bibeli-section  {
+    list-style: none;
+    padding: 0;
+    margin:2rem 0;;
+  }
+  .bibeli-section  .bibeli-inner {
+    padding: 1em;
+    overflow: hidden;
+    display: none;
+  }
+  .bibeli-section .bibeli-inner:first-child {
+    display: block;
+  }
+  .bibeli-section>div {
+    margin: 0.5em 0;
+  }
+  .bibeli-section>div a.bibeli-toggle {
+    width: 100%;
+    display: block;
+    padding: 0.75em;
+    border-radius: 0.15em;
+    transition: background 0.3s ease;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+  }
+  .bibeli-section  a.bibeli-toggle:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color:#fff;
+  }
+  .bibeli-section a.bibeli-toggle:hover:after {
+    border-top: 6px solid #fff;
+  }
+  .bibeli-section  a.bibeli-toggle:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #3c3c3c;
+    -webkit-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s;
+    position: absolute;
+    right: 0.55rem;
+    top: 50%;
+    background: transparent;
+}
+.bibeli-section  a.bibeli-toggle.active:after {
+    transform: rotate(-180deg);
+}
+.widget-text.wp-bibeli-widget-container {
+    padding: 2rem;
+}
+.wp-bibeli-widget-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.wp-bibeli-widget-container .passage {
+    font-weight: bold;
+}
+span.bibeli-copyright {
+  font-size: 12px;
+}
